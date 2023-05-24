@@ -1,6 +1,8 @@
-#include <iostream>
+п»ї#include <iostream>
 #include <string>
 #include <vector>
+
+// UTF-8
 
 class Person {
 private: 
@@ -55,7 +57,7 @@ public:
 		std::cout << _age << '\n';
 		for (int i{}; i < _marks.size(); i++)
 			std::cout << _marks[i] << " ";
-		std::cout << std::endl << std::endl;;
+		std::cout << std::endl << std::endl;
 	}
 
 	void SetMarks(unsigned int a, unsigned int b, unsigned int c) {
@@ -96,15 +98,15 @@ int main() {
 	setlocale(LC_ALL, "Russian");
 
 	Person P1;
-	P1.SetName("Санёк");
+	P1.SetName("РЎР°РЅС‘Рє");
 	P1.SetAge(14);
 	P1.PrintAll();
 
-	Pupil Pu1("Искандер", 14);
+	Pupil Pu1("РСЃРєР°РЅРґРµСЂ", 14);
 	Pu1.SetMarks(5, 4, 3);
 	Pu1.PrintAll();
 
-	Professor Pr1("Александр Тиунов хакер-голова-академик и просто хороший человек", "Доктор С++-ных наук");
+	Professor Pr1("РђР»РµРєСЃР°РЅРґСЂ", "Р”РѕРєС‚РѕСЂ РЅР°СѓРє");
 	Pr1.PrintAll();
 
 	
